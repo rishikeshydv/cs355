@@ -1,0 +1,85 @@
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+
+.topnav h1 {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+body {
+  background-color: mediumslateblue;
+  color:white;
+  font-family: "Poppins", sans-serif;
+}
+
+.todo-list{
+  width: 450px;
+  padding: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  background-color: white;
+}
+
+.list-head{
+  display: grid;
+  grid-template-columns: 4fr 0.5fr;
+  gap: 20px;
+}
+
+.fa-plus-circle{
+  margin-left: 0.3rem;
+}
+
+.todo-input{
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: wheat;
+}
+
+.todo-submit{
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.todo-submit.active {
+  pointer-events: all;
+}
+
+.items{
+  padding: 10px;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.items p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #111;
+  letter-spacing: 1px;
+}
+
+.items.completed p{
+  text-decoration: line-through;
+  color: #111;
+}
+.item-btn{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
