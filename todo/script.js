@@ -44,3 +44,12 @@ tasks.addEventListener('click', (e) => {
         e.target.parentElement.parentElement.classList.toggle('completed');
     }
 })
+
+//fetching the hits
+
+const $ = document.querySelector.bind(document);
+$('#hitcount').addEventListener('click',()=>{
+ fetch('/hits')
+ .then(r=>r.text())
+ .then(txt=>$('#hitcount').innerText = txt);
+});
